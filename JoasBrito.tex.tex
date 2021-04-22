@@ -1,0 +1,57 @@
+\documentclass[11pt]{article}
+\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage[a4paper]{geometry}
+\usepackage{fullpage}
+
+\justify
+
+% \title{Atividade 1 - MDTC}
+% \author{joas.brito@academico.ufpb.br }
+% \date{March 2021}
+
+\renewcommand*\contentsname{Sumário}
+	
+\begin{document}
+
+\begin{flushleft}
+\tableofcontents
+\end{flushleft}
+
+% \maketitle
+
+\justify
+
+\section{Variável Aleatória Contínua} Uma variável $\mathnormal{X}$ é denominada de \textbf{variável aleatória contínua (v.a.c)} quando seu espaço amostral $\mathnormal{ R_x }$ é um conjunto infinito não enumerável. 
+Como exemplos de variáveis aleatórias contínuas podemos citar:
+
+\begin{itemize}
+    \item resistência de um material,
+    \item concentração de CO2 na água,
+    \item tempo de vida de um componente eletrônico,
+    \item tempo de resposta de um sistema computacional,
+    \item temperatura e
+    \item medições (peso, altura, comprimento,...).
+\end{itemize}
+
+\subsection{Função de Densidade}
+Seja $\mathnormal{X}$ uma variável aleatória contínua (v.a.c). A função $\mathnormal{f(x)}$ que associa a cada $\mathnormal{x \in R_X}$ um número real que satisfaz as seguintes condições:
+\begin{enumerate}
+    \item $ f(x) \geqslant 0 $, para todo $ x \in R_X $ e
+    \item $\displaystyle\int_{-\infty}^{\infty} f(x) dx = 1$,
+\end{enumerate}
+é denominada de \textbf{função densidade de probabilidade (fdp)} da variável aleatória $X$.
+
+Neste caso $f(x)$ representa apenas a densidade no ponto $x$, ao contrário da função de probabilidade $p(x)$ de uma variável aleatória discreta, $f(x)$ aqui \textbf{não é a probabilidade} da variável $X$ assumir o valor $x$. Veremos a seguir como se calcula probabilidades quando se tem uma distribuição contínua.
+
+\subsection{Cálculo das Probabilidades}
+Seja $X$ uma v.a.c. com função densidade de probabilidade $f(x)$. Sejam $a < b$, dois números reais. Define-se:
+\begin{center}
+    $P(a < X < b) = \displaystyle\int_a^b f(x) dx$,
+\end{center}
+isto é, a probabilidade de que $X$ assuma valores entre os números "a" e "b" é a área sob o gráfico da função $f(x)$ entre os pontos $x=a$ e $x=b$. \\ \\ \\
+
+
+\end{document}
